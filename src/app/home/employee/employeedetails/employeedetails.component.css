@@ -1,0 +1,12 @@
+.employeeDetail {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 38px;
+    display: inline-block;
+}
+.container{background-color: #fff}
+.form-inline{    padding: 10px 15px 10px;
+    margin: 25px 27px 20px;
+}
+.pull-right { float: right;}
+.pull-left { float: left;}

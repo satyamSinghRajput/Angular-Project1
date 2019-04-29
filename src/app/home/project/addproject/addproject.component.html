@@ -1,0 +1,96 @@
+<main class="addproject">
+        <!-- <div class=""><div class="row"><div class="col-sm"> One of three columns <div class="col-sm"> One of three columns   </div>  <div class="col-sm"> One of three columns </div></div> </div> -->
+   <div class="form-group">
+    <div class="container">
+    <h4>Add Project</h4>
+        <!-- <div class=""><div class="row"><div class="col-sm"> One of three columns <div class="col-sm"> One of three columns   </div>  <div class="col-sm"> One of three columns </div></div> </div> -->
+      <div class="form-group">
+        <div class="container">
+            <form class="form-inline">
+              <div class="col-sm-12">
+                  <div class="pull-left">
+                      <button type="cancel" class="btn btn-default" routerLink="/project"  data-ripple="ripple">Cancel</button>
+                  </div>
+                  <div class="pull-right">
+                      <button type="submit" class="btn btn-default" (click)="submit()">Save</button>
+                  </div>
+              </div>    
+                  <div class="addproject"> 
+                      <div class="row">
+                          <div class="col-sm">        
+                            <div class="form-group row">
+                                <label class="col-2 col-form-label" for="name">Project Name:</label>
+                                <div class="col-10">          
+                                  <input type="text" class="form-control" name="Projectname" placeholder="Project Name"  [(ngModel)]='projData.projectname'>
+                                </div>
+                            </div>
+                          </div>
+                     
+                        <div class="col-sm">
+                              <div class="form-group row">
+                                      <label class="col-2 col-form-label" for="id">Project Budget:</label>
+                                      <div class="col-10">
+                                        <input type="text" class="form-control" name="Projectbudget" placeholder="Project Budget" [(ngModel)]='projData.projectbudget'>
+                                      </div>
+                              </div>
+                            </div>
+                      <div class="col-sm">
+                          <div class="form-group row">
+                                  <label class="col-2 col-form-label" for="id">Client Nmae:</label>
+                                  <div class="col-10">
+                                      <input type="text" class="form-control" name="Clientnmae" placeholder="Client Nmae" [(ngModel)]='projData.clientname'>
+                                  </div>
+                          </div>
+                          </div>
+                        </div>  
+                        <div class="row">
+                        <div class="col-sm">
+                        <div class="form-group row">
+                                <label class="col-2 col-form-label" for="desig">Project Task:</label>
+                                <div class="col-10">
+                                  <input type="text" class="form-control" name="Projecttask" placeholder="Project Task" [(ngModel)]='projData.projecttask'>
+                                </div>
+                              </div></div>
+                              <div class="col-sm">
+                              <div class="form-group row">
+                                <label class="col-2 col-form-label" for="name">Project Owner:</label>
+                                <div class="col-10">          
+                                  <input type="text" class="form-control" name="Projectowner" placeholder="Project Owner" [(ngModel)]='projData.projectowner'>
+                                </div>
+                              </div>
+                              </div>
+                              <div class="col-sm">
+                              <div class="form-group row">
+                                    <label class="col-2 col-form-label" for="id">Project Manager:</label>
+                                    <div class="col-10">
+                                      <input type="text" class="form-control" name="Projectmanager" placeholder="Project Manager" [(ngModel)]='projData.projectmanager'>
+                                    </div>
+                                  </div>
+                                  </div>
+                                  </div>
+                                  <div class="row">
+                                  <div class="col-sm">
+                                  <div class="form-group row">
+                                    <label class="col-2 col-form-label" for="name">Project Lead:</label>
+                                    <div class="col-10">          
+                                      <input type="text" class="form-control" name="Projectlead" placeholder="Project Lead" [(ngModel)]='projData.projectleaad'>
+                                    </div>
+                                  </div>
+                                  </div>
+                                  <div class="col-sm">
+                                      <div class="form-group row">
+                                        <label class="col-2 col-form-label" for="name">Project Member:</label>
+                                        <div class="col-10">          
+                                          <input type="text" class="form-control" name="projectmember" placeholder="project Member" [(ngModel)]='projData.projectmember'>
+                                        </div>
+                                      </div>
+                                      </div>
+                                  </div>
+                                  </div>
+              </form> 
+        
+        </div> 
+      </div>
+      </div>
+      </div>
+    </main>

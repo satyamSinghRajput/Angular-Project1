@@ -1,0 +1,39 @@
+<div class="headingattend">
+        <h1>Attendance</h1>
+        </div>
+<div class="container">
+        <label>Date:</label>
+        <label>
+                <input type="date" [(ngModel)]="calender">
+        </label>{{calender}}
+                <!-- <input [owlDateTimeTrigger]="dt5" [owlDateTime]="dt5">
+                <owl-date-time [pickerMode]="'dialog'" #dt5></owl-date-time> -->
+<!--                              
+                                <mwl-demo-utils-date-time-picker
+                                  [(ngModel)]="calenderDate"
+                                  
+                                  placeholder="Not set">
+                                </mwl-demo-utils-date-time-picker>
+                            -->
+                             <!-- <div class="button-submit">  
+                <button type="submit" class="buttonFun"><i class="fa fa-search"></i></button>
+           </div> -->
+           
+           
+        <table>
+                <tr class="trlist">
+                        <th>Name</th>
+                        <th>Employee Code</th>
+                        <th>Time In</th>
+                        <th>Time Out</th>
+                        <th>Status</th>
+                </tr>
+                <tr *ngFor="let empedit of gridEmpAtten" (dblclick)="gotoedit(empedit)">
+                    <td>{{empedit.name}}</td>
+                    <td>{{empedit.employeeCode}}</td>
+                    <td>{{empedit.timeIn}}</td>
+                    <td>{{empedit.timeOut}}</td>
+                    <td>{{empedit.status}}</td>
+               </tr>
+            </table>
+</div>

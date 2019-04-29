@@ -1,0 +1,43 @@
+<main>
+    <div class="login">
+        <section class="popup-wrapper">
+            <div>
+                <div class="popup custom-login-popup">
+                    <header class= "image">
+                        <img width="77" src="assets/resources/logo.png">
+                    </header>
+                    <!-- <form (ngSubmit)="login()" #loginForm="ngForm"> -->
+                        <div class="popup-content">
+                        
+                            <div class="form-view_section">
+                                <div class="form-view_field-group ">
+                                    <div class="form-view_field custom-form-view_field">
+                                        <label class="required_right">User Name</label>
+                                        <input type="text" placeholder="Username" name="username" required>
+                                        <!-- <div class="alert alert-danger"> -->
+                                            <!-- <div class="error-msg">Username is required!</div> -->
+                                        <!-- </div> -->
+                                    </div>
+                                </div>
+                                <div class="form-view_field-group ">
+                                    <div class="form-view_field custom-form-view_field">
+                                        <label class="required_right"> Password </label>
+                                        <input type="password" placeholder="Password" name="password" required>
+                                        <!-- <div class="alert alert-danger"> -->
+                                            <!-- <div class="error-msg"> Password is required!</div> -->
+                                        <!-- </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- </form> -->
+                    <div class="popup-content_actions">
+                        <button type="submit" class="button button-login handHover floatCenter" (click)="login()">Login
+                            <div class="ripple-container"></div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>

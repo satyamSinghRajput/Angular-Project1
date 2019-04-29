@@ -1,0 +1,33 @@
+<div class="heading">
+<h4>EMPLOYEE</h4>
+</div>
+<div class="container">
+       
+        <div class="topserchBox pull-left">
+                <div class="form-inline" >
+                        <div class="form-group">
+                                 <label for="text">Searching Name/ID:</label>
+                        <input type="text" class="form-control" id="id" [(ngModel)]="searchNameid" name="ID">
+                        <button type="search" class="button button-action button-search" (click)="findNameID()">Search</button>
+                        </div>
+                </div>
+                        <div class="pull-right">
+                           <button type="button" class="btn-primary-btn" (click)="addEmp()">Add Employee</button>
+                        </div> 
+        </div>               
+<table>
+    
+    <tr class="trlist">
+            <th>Name</th>
+            <th>Employee Code</th>
+            <th>Join Date</th>
+            <th>Date Of Birth</th>
+    </tr>
+    <tr *ngFor="let emp of gridMemberList"  (dblclick)="gotoedit(emp)">
+        <td>{{emp.name}}</td>
+        <td>{{emp.employeeCode}}</td>
+        <td>{{emp.joinDate}}</td>
+        <td>{{emp.dateOfBirth}}</td>
+   </tr>
+</table>
+</div>

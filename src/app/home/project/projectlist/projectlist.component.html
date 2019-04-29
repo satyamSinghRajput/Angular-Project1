@@ -1,0 +1,22 @@
+<div class="headingproject">
+        <h1>PROJECT</h1>
+        </div>
+  <div class="container"> 
+        <div class="pull-right">
+                <button type="button" class="button" (click)="addProj()">Add Project</button>
+                </div> 
+<table>
+        <tr>
+                <th>Project Name</th>
+                <th>Project Budget</th>
+                <th>Client Name</th>
+                <th>Project Task</th>
+        </tr>
+        <tr *ngFor="let proj of projectdescribe"  (dblclick)="gotoedit(proj)">
+            <td>{{proj.projectname}}</td>
+            <td>{{proj.projectbudget}}</td>
+            <td>{{proj.clientname}}</td>
+            <td>{{proj.projecttask}}</td>
+       </tr>
+    </table>
+</div>

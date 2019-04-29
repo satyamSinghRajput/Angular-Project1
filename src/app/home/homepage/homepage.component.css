@@ -1,0 +1,14 @@
+
+.welcome
+{   
+    padding-left: 81px;
+    color: black;
+    font-size: 5.2rem;  
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.87);
+}
+.headerPara{
+color: #333333;
+    line-height: 25px;
+    margin: 0 0px 22px 0;
+    font-weight: 500;
+}

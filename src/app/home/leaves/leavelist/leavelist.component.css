@@ -1,0 +1,27 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+ td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+} 
+.trlist{  
+    background-color: #698080;
+    color: white;
+}
+.headingleaves{
+        color: #45586d;
+        text-align: center;
+        border: 2px solid #45586d;
+        width: 155px;
+        margin: 15px auto;
+    }
+    .container{background: white;}
+    .button {    padding: 8px 15px 8px;
+        background-color: #61b9cb;
+        color: white;
+        border-radius: 24px;
+        background-color: #61b9cb;}

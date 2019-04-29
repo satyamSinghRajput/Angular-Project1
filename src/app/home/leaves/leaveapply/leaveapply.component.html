@@ -1,0 +1,69 @@
+<main class="applyleaves">
+    <div class="form-group">
+        <div class="container">
+        <h4>Apply Leaves</h4>
+          
+          <div class="form-group">
+            <div class="container">
+                <form class="form-inline">
+                  <div class="col-sm-12">
+                      <div class="pull-left">
+                          <button type="cancel" class="btn btn-default" routerLink="/leaves"  data-ripple="ripple">Cancel</button>
+                      </div>
+                      <div class="pull-right">
+                          <button type="submit" class="btn btn-default" (click)="submit()">Save</button>
+                      </div>
+                  </div>    
+                      <div class="addproject"> 
+                          <div class="row">
+                              <div class="col-sm">        
+                                <div class="form-group row">
+                                    <label class="col-2 col-form-label" for="name">Date from:</label>
+                                    <div class="col-10">          
+                                      <input type="text" class="form-control" name="datefrom" placeholder="Date from"  [(ngModel)]='leavesData.datefrom'>
+                                    </div>
+                                </div>
+                              </div>
+                         
+                            <div class="col-sm">
+                                  <div class="form-group row">
+                                          <label class="col-2 col-form-label" for="id">Date To:</label>
+                                          <div class="col-10">
+                                            <input type="text" class="form-control" name="dateto" placeholder="Date To" [(ngModel)]='leavesData.dateto'>
+                                          </div>
+                                  </div>
+                                </div>
+                          <div class="col-sm">
+                              <div class="form-group row">
+                                      <label class="col-2 col-form-label" for="id">Type:</label>
+                                      <div class="col-10">
+                                          <input type="text" class="form-control" name="type" placeholder="Type" [(ngModel)]='leavesData.type'>
+                                      </div>
+                              </div>
+                              </div>
+                            </div>  
+                            <div class="row">
+                            <div class="col-sm">
+                            <div class="form-group row">
+                                    <label class="col-2 col-form-label" for="desig">Apply To:</label>
+                                    <div class="col-10">
+                                      <input type="text" class="form-control" name="applyto" placeholder="Apply To" [(ngModel)]='leavesData.applyto'>
+                                    </div>
+                                  </div></div>
+                                  <div class="col-sm">
+                                  <div class="form-group row">
+                                    <label class="col-2 col-form-label" for="name">Status:</label>
+                                    <div class="col-10">          
+                                      <input type="text" class="form-control" name="status" placeholder="Status" [(ngModel)]='leavesData.status'>
+                                    </div>
+                                  </div>
+                                  </div>
+                                </div>
+                                      </div>
+                  </form> 
+            
+            </div> 
+          </div>
+  </div>
+  </div>        
+        </main>

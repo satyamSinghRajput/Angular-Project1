@@ -1,0 +1,32 @@
+<div class="headingleaves">
+        <h1>LEAVES</h1>
+        </div>
+<div class="container">
+        <tabset>
+         <tab heading="{{dateList.year}}" id="{{dateList.year}}" *ngFor="let dateList of dateArr" (select)="onYearTabSelect(dateList)">
+                        
+                                <div class="pull-right">
+                                        <button type="button" class="button" (click)="apply()">Apply Leaves</button>
+                                  
+                        </div>
+                    <table>
+                        <tr class="trlist">
+                                <th>Date from</th>
+                                <th>Date To</th>
+                                <th>Type</th>
+                                <th>Apply To</th>
+                                <th>staus</th>
+                        </tr>
+                      
+                        <tr *ngFor="let leav of dateList.data" (dblclick)="gotoedit(leav)">
+                                <td>{{leav.datefrom}}</td>
+                                <td>{{leav.dateto}}</td>
+                                <td>{{leav.type}}</td>
+                                <td>{{leav.applyto}}</td>
+                                <td>{{leav.status}}</td>
+                           </tr>
+                    </table>    
+                       </tab>
+               
+        </tabset> 
+</div>

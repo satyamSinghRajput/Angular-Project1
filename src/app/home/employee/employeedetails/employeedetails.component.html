@@ -1,0 +1,99 @@
+<main class="EmployeeDetails">
+    <!-- <div class=""><div class="row"><div class="col-sm"> One of three columns <div class="col-sm"> One of three columns   </div>  <div class="col-sm"> One of three columns </div></div> </div> -->
+  <div class="form-group">
+    <div class="container">
+        <form class="form-inline">
+          <div class="col-sm-12">
+              <div class="pull-left">
+                  <button type="cancel" class="btn btn-default" routerLink="/employee"  data-ripple="ripple">Cancel</button>
+              </div>
+              <div class="pull-right">
+                  <button type="submit" class="btn btn-default" (click)="submit()">Save</button>
+              </div>
+          </div>    
+              <div class="employeeDetail"> 
+                  <div class="row">
+                      <div class="col-sm">        
+                        <div class="form-group row">
+                            <label class="col-2 col-form-label" for="name">Name:</label>
+                            <div class="col-10">          
+                              <input type="text" class="form-control" name="EmployeeName" placeholder="Employee Name" [(ngModel)]='empData.name'>
+                            </div>
+                        </div>
+                      </div>
+                 
+                    <div class="col-sm">
+                          <div class="form-group row">
+                                  <label class="col-2 col-form-label" for="id">Employee Code:</label>
+                                  <div class="col-10">
+                                    <input type="text" class="form-control" name="EmployeeId" placeholder="Employee Id" [(ngModel)]='empData.employeeCode' [disabled]="employeeCode!=null">
+                                  </div>
+                          </div>
+                        </div>
+                  <div class="col-sm">
+                      <div class="form-group row">
+                              <label class="col-2 col-form-label" for="id">Join Date:</label>
+                              <div class="col-10">
+                                  <input type="text" class="form-control" name="joindate" placeholder="Join Date" [(ngModel)]='empData.joinDate'>
+                              </div>
+                      </div>
+                      </div>
+                    </div>  
+                    <div class="row">
+                    <div class="col-sm">
+                    <div class="form-group row">
+                            <label class="col-2 col-form-label" for="desig">Designation:</label>
+                            <div class="col-10">
+                              <input type="text" class="form-control" name="Designation" placeholder="Designation" [(ngModel)]='empData.empDesignation'>
+                          <!-- <div>  {{empID}} {{empData.empId}} </div> -->
+                            </div>
+                          </div></div>
+                          <div class="col-sm">
+                          <div class="form-group row">
+                            <label class="col-2 col-form-label" for="name">Contact No:</label>
+                            <div class="col-10">          
+                              <input type="text" class="form-control" name="Contact" placeholder="+91 123456789" [(ngModel)]='empData.contactNo'>
+                            </div>
+                          </div>
+                          </div>
+                          <div class="col-sm">
+                          <div class="form-group row">
+                                <label class="col-2 col-form-label" for="id">Email:</label>
+                                <div class="col-10">
+                                  <input type="text" class="form-control" name="email" placeholder="Email" [(ngModel)]='empData.email'>
+                                </div>
+                              </div>
+                              </div>
+                              </div>
+                              <div class="row">
+                              <div class="col-sm">
+                              <div class="form-group row">
+                                <label class="col-2 col-form-label" for="name">Date Of Birth:</label>
+                                <div class="col-10">          
+                                  <input type="text" class="form-control" name="Dateofbirth" placeholder="Dateofbirth" [(ngModel)]='empData.dateOfBirth'>
+                                </div>
+                              </div>
+                              </div>
+                              <div class="col-sm">
+                                  <div class="form-group row">
+                                    <label class="col-2 col-form-label" for="name">Project Name:</label>
+                                    <div class="col-10">          
+                                      <input type="text" class="form-control" name="projectName" placeholder="projectName" [(ngModel)]='empData.projectName'>
+                                    </div>
+                                  </div>
+                                  </div>
+                              <div class="col-sm">
+                              <div class="form-group">
+                                    <label class="col-2 col-form-label" for="name">Qualification:</label>
+                                    <div class="col-10">          
+                                      <input type="text" class="form-control" name="Qualification" placeholder="Qualification" [(ngModel)]='empData.qualification'>
+                                    </div>
+                                  </div>
+                                  </div>
+                              </div>
+                              </div>
+          </form> 
+    
+    </div> 
+  </div>
+</main>

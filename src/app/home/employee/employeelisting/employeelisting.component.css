@@ -1,0 +1,43 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+.topserchBox{
+    padding: 10px 10px;
+    background: white;
+    overflow: hidden;
+}
+.btn-primary-btn{
+    color: #fff;
+    background-color: #61b9cb;
+    border-color: #61b9cb;
+    padding: 7px 4px;
+    border-radius: 23px;
+}
+.container{background: white;}
+.trlist{  
+    background-color: #698080;
+    color: white;
+}
+.pull-right{float: right;}
+.form-inline{float: left;}
+.button {    padding: 8px 15px 8px;
+    background-color: #61b9cb;
+    color: white;
+    border-radius: 24px;
+    background-color: #61b9cb;}
+.form-control{padding: 8px;}
+.heading{
+    color: #45586d;
+    text-align: center;
+    border: 2px solid #45586d;
+    width: 138px;
+    margin: 15px auto;
+}

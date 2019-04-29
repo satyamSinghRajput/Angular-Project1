@@ -1,0 +1,98 @@
+.login {
+    background: #488eb9;
+  }
+  .login input {
+    padding: 1rem 2.125rem;
+    font-size: 1.4rem;
+    background-color: #fff;
+    border: 2px solid #e5eaf0;
+    border-radius: 4px;
+    box-shadow: none;
+    box-sizing: border-box;
+    transition: 0.25s all ease;
+    color: #71787f;
+    width: 100%;
+    padding: 5px;
+  }
+  .login .button {
+    color: #fff;
+    background-color: #4eb1c5;
+    text-align: center;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.1rem;
+    text-transform: capitalize;
+    border: 0;
+    border-radius: 4px;
+  }
+  .custom-form-view_field {
+    width: 100%;
+  }
+  .custom-login-popup {
+    width: 40rem;
+    border: 15px solid burlywood;
+    padding: 50px;
+    background: #d1c8c8;
+}
+  .custom-login-popup .alert-danger {
+    padding: 0.25rem 1.25rem !important;
+    font-size: smaller;
+  }
+  @media (max-width: 767px) {
+    .custom-login-popup {
+      width: 100%;
+    }
+  }
+  @media (max-width: 567px) {
+    .custom-login-popup header img {
+      width: 250px;
+    }
+  }
+  .custom-login-popup .popup-content_actions .button {
+    padding: 0.5rem 2.5rem 0.5rem 2.5rem;
+    margin: auto;
+  }
+  .form-view_field-group {
+    display: -webkit-flex;
+    display: flex;
+  }
+  .popup-content {
+    padding: 3rem 5rem 0;
+  }
+  .popup-content_actions {
+    padding: 2rem 5rem 3rem;
+  }
+  
+
+.popup-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: 101;
+    overflow: auto;
+}
+.popup header {
+  padding: 3.5rem 5rem;
+  border-bottom: 1px solid #e5eaf0;
+  text-align: center;
+}
+.ripple-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+}
+.image{}
